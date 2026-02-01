@@ -1,0 +1,10 @@
+# Development dependencies for portfolio website
+
+# Live server with auto-reload
+livereload==2.6.3
+
+# Simple HTTP server alternative
+flask==3.0.0
+
+# For deployment/production
+gunicorn

@@ -1,10 +1,5 @@
-# Development dependencies for portfolio website
-
-# Live server with auto-reload
-livereload==2.6.3
-
-# Simple HTTP server alternative
+# Flask web framework
 flask==3.0.0
 
-# For deployment/production
-gunicorn
+# Production WSGI server for Render
+gunicorn==21.2.0

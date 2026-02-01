@@ -2,4 +2,4 @@
 flask==3.0.0
 
 # Production WSGI server for Render
-gunicorn==21.2.0
+gunicorn

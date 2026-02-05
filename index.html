@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Srimanyu Acharya | Portfolio</title>
-    <meta name="description" content="Portfolio of Srimanyu Acharya, a passionate developer.">
+    <meta name="description" content="Portfolio of Srimanyu Acharya, Computer Science Student & Developer.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -19,13 +17,18 @@
 
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">Sri.</a>
+            <a href="#home" class="logo">Sri.</a>
             <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="cta-nav">
+                <a href="resume.pdf" target="_blank" class="btn btn-outline btn-sm">Resume</a>
+            </div>
             <div class="menu-toggle">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -37,17 +40,24 @@
     <header class="hero" id="home">
         <div class="container hero-container">
             <div class="hero-content fade-in-up">
-                <span class="greeting">Hello, I'm</span>
+                <span class="greeting">Hi there, I'm</span>
                 <h1 class="name">Srimanyu <span class="highlight">Acharya</span></h1>
-                <p class="role">Full Stack Developer & AI Enthusiast</p>
+                <p class="role">CS Student • AI Enthusiast • Developer</p>
+                <p class="hero-bio">Motivated computer science student eager to leverage technical knowledge in React and AWS Cloud. Focused on problem-solving and effective collaboration.</p>
                 <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="resume.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-download"></i> Download Resume</a>
                 </div>
             </div>
             <div class="hero-visual fade-in-up delay-200">
-                <!-- Abstract geometric shapes or user image could go here. CSS shapes for now. -->
                 <div class="shape-blob"></div>
+                <div class="glass-card">
+                    <div class="code-line"><span class="purple">const</span> <span class="blue">developer</span> = {</div>
+                    <div class="code-line indent"><span class="key">name:</span> <span class="string">'Srimanyu'</span>,</div>
+                    <div class="code-line indent"><span class="key">traits:</span> [<span class="string">'Problem Solver'</span>, <span class="string">'Creative'</span>],</div>
+                    <div class="code-line indent"><span class="key">motto:</span> <span class="string">'Build to Solve'</span></div>
+                    <div class="code-line">};</div>
+                </div>
             </div>
         </div>
     </header>
@@ -57,20 +67,44 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text scroll-animate">
-                    <p>I am a passionate developer currently exploring the depths of Object Detection and Full Stack
-                        Development. I love building tools that solve real-world problems and have a keen interest in
-                        Artificial Intelligence.</p>
-                    <p>When I'm not coding, you can find me learning about new tech trends or optimizing my workflow.
-                    </p>
+                    <p>I am a computer science student with a foundational experience in core programming and front-end development. I'm passionate about building dynamic applications and exploring the potential of Artificial Intelligence.</p>
+                    <p>My approach is marked by effective communication, problem-solving skills, and a positive, friendly attitude that helps me excel in team environments.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="label">Location</span>
+                            <span class="val">Mysore, India</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Email</span>
+                            <span class="val">srimanyuacharya@gmail.com</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="about-stats scroll-animate delay-200">
                     <div class="stat-item">
-                        <span class="stat-number">2+</span>
-                        <span class="stat-label">Years Exp.</span>
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Main Projects</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">10+</span>
-                        <span class="stat-label">Projects</span>
+                        <span class="stat-number">7+</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section education bg-alt">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item scroll-animate">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor in Computer Science and Engineering</h3>
+                        <p class="institution">Maharaja Institute of Technology, Mysore</p>
+                        <p class="duration">2023 – 2027</p>
+                        <p class="result">CGPA: 7.94 | Expected Graduation: August 2027</p>
                     </div>
                 </div>
             </div>
@@ -79,82 +113,139 @@
 
     <section id="skills" class="section skills">
         <div class="container">
-            <h2 class="section-title">My Skills</h2>
+            <h2 class="section-title">Skills Overview</h2>
             <div class="skills-grid">
                 <div class="skill-card scroll-animate">
-                    <i class="fab fa-html5"></i>
-                    <h3>Frontend</h3>
-                    <p>HTML, CSS, JavaScript, React</p>
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Technical</h3>
+                    <p>Java, Python, SQL, C++, C, HTML, CSS, React</p>
                 </div>
                 <div class="skill-card scroll-animate delay-100">
-                    <i class="fas fa-server"></i>
-                    <h3>Backend</h3>
-                    <p>Python, Node.js, SQL</p>
+                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud & AI</h3>
+                    <p>AWS Cloud Practitioner, AI Fundamentals</p>
                 </div>
                 <div class="skill-card scroll-animate delay-200">
-                    <i class="fas fa-brain"></i>
-                    <h3>AI & ML</h3>
-                    <p>TensorFlow, OpenCV, YOLO</p>
+                    <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Networking</h3>
+                    <p>Packet Switching, JDBC</p>
                 </div>
                 <div class="skill-card scroll-animate delay-300">
-                    <i class="fas fa-tools"></i>
-                    <h3>Tools</h3>
-                    <p>Git, VS Code, Linux</p>
+                    <div class="skill-icon"><i class="fas fa-users"></i></div>
+                    <h3>Soft Skills</h3>
+                    <p>Teamwork, Time Management, Problem Solving</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section projects">
+    <section id="projects" class="section projects bg-alt">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title">Selected Projects</h2>
             <div class="projects-grid">
                 <article class="project-card scroll-animate">
                     <div class="project-image">
-                        <div class="placeholder-img"></div>
+                        <div class="img-overlay"></div>
+                        <div class="img-placeholder" style="background: linear-gradient(45deg, #4f46e5, #38bdf8);"></div>
                     </div>
                     <div class="project-info">
-                        <h3>Object Detection Tracker</h3>
-                        <p>A real-time object detection system built from scratch using Python and OpenCV.</p>
+                        <h3>Offline Cyber Tutor</h3>
+                        <p>Education tool focused on cyber safety awareness.</p>
                         <div class="project-tags">
                             <span>Python</span>
-                            <span>OpenCV</span>
-                            <span>AI</span>
+                            <span>Security</span>
                         </div>
-                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/srimanyuacharyah/cyber-safety-tutor.git" target="_blank" class="project-link">Source <i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </article>
-                <article class="project-card scroll-animate delay-200">
+
+                <article class="project-card scroll-animate delay-100">
                     <div class="project-image">
-                        <div class="placeholder-img" style="background: linear-gradient(45deg, #2ecc71, #27ae60);">
-                        </div>
+                        <div class="img-overlay"></div>
+                        <div class="img-placeholder" style="background: linear-gradient(45deg, #10b981, #38bdf8);"></div>
                     </div>
                     <div class="project-info">
-                        <h3>Attendance Tracker</h3>
-                        <p>Web-based application to track student attendance efficiently.</p>
+                        <h3>Eng to Kan Translator</h3>
+                        <p>Speech-to-speech and text-to-text translation system.</p>
                         <div class="project-tags">
-                            <span>HTML/CSS</span>
-                            <span>JS</span>
-                            <span>Database</span>
+                            <span>NLP</span>
+                            <span>Python</span>
                         </div>
-                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/srimanyuacharyah/eng-to-kan-translator.git" target="_blank" class="project-link">Source <i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </article>
+
                 <article class="project-card scroll-animate delay-200">
                     <div class="project-image">
-                        <div class="placeholder-img" style="background: linear-gradient(45deg, #e74c3c, #c0392b);">
-                        </div>
+                        <div class="img-overlay"></div>
+                        <div class="img-placeholder" style="background: linear-gradient(45deg, #f59e0b, #38bdf8);"></div>
                     </div>
                     <div class="project-info">
-                        <h3>Portfolio V1</h3>
-                        <p>My first portfolio website showcasing my early journey.</p>
+                        <h3>CNN Flask Demo</h3>
+                        <p>Image classification application using CNN and Flask.</p>
                         <div class="project-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
+                            <span>CNN</span>
+                            <span>Flask</span>
+                            <span>DL</span>
                         </div>
-                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/srimanyuacharyah/cnn-flask-application.git" target="_blank" class="project-link">Source <i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </article>
+
+                <article class="project-card scroll-animate delay-300">
+                    <div class="project-image">
+                        <div class="img-overlay"></div>
+                        <div class="img-placeholder" style="background: linear-gradient(45deg, #ef4444, #38bdf8);"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Smart Chatbot</h3>
+                        <p>Intelligent chatbot system for interactive communication.</p>
+                        <div class="project-tags">
+                            <span>NLP</span>
+                            <span>Python</span>
+                        </div>
+                        <a href="https://github.com/srimanyuacharyah/chatbot.git" target="_blank" class="project-link">Source <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </article>
+            </div>
+            <div class="more-projects">
+                <a href="https://github.com/srimanyuacharyah" target="_blank" class="btn btn-secondary">Discover more on GitHub <i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-item scroll-animate">
+                    <div class="cert-date">Dec 2025</div>
+                    <div class="cert-details">
+                        <h4>Advanced Java</h4>
+                        <p>Learn Quest</p>
+                    </div>
+                </div>
+                <div class="cert-item scroll-animate delay-100">
+                    <div class="cert-date">Nov 2025</div>
+                    <div class="cert-details">
+                        <h4>AWS Cloud Practitioner</h4>
+                        <p>Amazon Web Services</p>
+                    </div>
+                </div>
+                <div class="cert-item scroll-animate delay-200">
+                    <div class="cert-date">Oct 2025</div>
+                    <div class="cert-details">
+                        <h4>AI Fundamentals</h4>
+                        <p>IBM</p>
+                    </div>
+                </div>
+                <div class="cert-item scroll-animate delay-300">
+                    <div class="cert-date">Oct 2025</div>
+                    <div class="cert-details">
+                        <h4>Front-End React</h4>
+                        <p>IBM</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -162,13 +253,22 @@
     <section id="contact" class="section contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content scroll-animate">
-                <p>Have a project in mind or just want to say hi? Feel free to reach out!</p>
-                <a href="mailto:contact@example.com" class="btn btn-primary">Say Hello</a>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+            <div class="contact-card scroll-animate">
+                <div class="contact-info">
+                    <p>I'm currently looking for opportunities to collaborate on innovative projects. Whether you have a question or just want to say hi, my inbox is always open!</p>
+                    <div class="contact-links">
+                        <a href="mailto:srimanyuacharya@gmail.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>srimanyuacharya@gmail.com</span>
+                        </a>
+                        <a href="https://linkedin.com/in/srimanyu-a-494304310" target="_blank" class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>srimanyu-a-494304310</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <a href="mailto:srimanyuacharya@gmail.com" class="btn btn-primary btn-lg">Send a Message</a>
                 </div>
             </div>
         </div>
@@ -176,7 +276,11 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Srimanyu Acharya. Built with <i class="fas fa-heart"></i> and Code.</p>
+            <div class="footer-links">
+                <a href="https://github.com/srimanyuacharyah" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/srimanyu-a-494304310" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2025 Srimanyu Acharya. Handcrafted with <i class="fas fa-heart"></i></p>
         </div>
     </footer>
 
